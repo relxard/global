@@ -1,0 +1,18 @@
+48 01 01   | Start YY MM DD (inclusive)
+25 01 01   | Stop  YY MM DD (exclusive)
+0          | Initialization (0:none 1:bands 2:dewpt 3:gbl3dim >3:value)
+0.0 0.0    | Concentration range for initialization
+2.0E+05    | Horizontal mixing coefficient at equator (default = 2.0E+05 m2/s)
+1.0        | Vertical velocity scaling factor (0.0 to 1.0)
+0          | Vertical velocity computation method (0=data 1=divergence)
+50.0       | Maximum vertical mixing (50 m2/s)
+2          | Global Mass (0=skip 1=show 2=conserve)
+2          | Source term frequency (0:none 1:once >=2:step)
+1.0        | Source term base rate adjustment factor (1.15 = 15% increase)
+24         | Concentration output frequency (hours)
+0          | Initial output hour (0-24)
+1          | Concentration output level (hPa or index)
+1.0        | Concentration output units conversion factor
+3930.0     | Pollutant half life (3930.0 days)
+'Kr85'     | Pollutant 4-character identification (in quotes)
+'/Work/RP194801.gbl'   | Directory and name of the first meteo file
