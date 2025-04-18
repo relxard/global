@@ -38,7 +38,7 @@
 ! 18 Sep 2006 - 3.5	Delta-height limit test & monthly emission factors
 ! 05 Dec 2007 - 3.6	Fix to dew point init, output freq, w&rh init
 ! 28 Mar 2008 - 3.7	Adjoint version
-! 03 Apr 2025 - 3.8	Update most input files to standard CSV formats
+! 18 Apr 2025 - 3.8	Update most input files to standard CSV formats
 !-------------------------------------------------------------------------
 
 MODULE constant
@@ -2148,7 +2148,7 @@ SUBROUTINE dayout (IYR,IMO,IDA,IHR,IMN,CFACT)
 ! dump all array contents to file
   WRITE(kc3dd) iyr,imo,ida,ihr,imn
   WRITE(kc3dd) nx,ny,nz
-  WRITE(kc3dd) clat1,clon1,dlat,dlon
+  WRITE(kc3dd) DBLE(clat1),DBLE(clon1),DBLE(dlat),DBLE(dlon)
   WRITE(kc3dd) sig
   CCC = QQQ*CFACT*ROW
   WRITE(kc3dd) CCC
